@@ -46,7 +46,7 @@ const sendBroadcast = async (tweet: tweetType) => {
   } else if (!in_reply_to_screen_name && !retweeted_status && !entities.media) {
     broadcastMsg += `📝 <b>${user.screen_name}</b> membagikan tweet barunya`;
   }
-  broadcastMsg += `\nLink: https://twitter.com/${user.screen_name}/status/${id_str}`;
+  broadcastMsg += `\nhttps://twitter.com/${user.screen_name}/status/${id_str}`;
   broadcastMsg += `\n\n<i>Klik link di atas untuk melihat tweet selengkapnya, jika link tidak bisa diakses kemungkinan member menghapus tweetnya</i>`;
 
   await axios
